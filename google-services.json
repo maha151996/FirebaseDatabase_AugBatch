@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "353806852854",
+    "project_id": "androidbatchaug-db",
+    "storage_bucket": "androidbatchaug-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353806852854:android:faa8e01dbb6563b5b582d7",
+        "android_client_info": {
+          "package_name": "com.example.firebasedatabase_augbatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353806852854-p6q9oe2ijaigm9nm7pqh5llv3nv4e155.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPFMDYYzGO2hN2r_Wr_lQo2OcySVtckHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353806852854-p6q9oe2ijaigm9nm7pqh5llv3nv4e155.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
