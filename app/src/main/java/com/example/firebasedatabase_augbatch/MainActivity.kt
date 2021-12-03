@@ -14,31 +14,15 @@ class MainActivity : AppCompatActivity() {
         databaseRefrence=FirebaseDatabase.getInstance("https://androidbatchaug-db-default-rtdb.firebaseio.com/").reference
         submit.setOnClickListener {
 //            saveStudent()
-            studentList()
+            //studentList()
         }
     }
 
-    private fun studentList() {
-        val studentList = databaseRefrence?.child("Student")?.orderByChild("Email")
-        studentList?.addValueEventListener(object: ValueEventListener{
-            override fun onDataChange(snapshot: DataSnapshot) {
-                for (postSnapshot in snapshot.children) {
-                    // TODO: handle the post
-                }
-            }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
-
-        }
-
-        )
-    }
 
     private fun saveStudent() {
         val studentID= databaseRefrence?.child("Student")?.push()?.key ?: return
-var student=Student("Theta","Solutions",34.0,"thetasolutions@gmail.com","030987654",45.0 )
+var student=Student(studentID,"Theta","Solutions",34.0,"thetasolutions@gmail.com","030987654",45.0 )
        databaseRefrence!!.child("Administration").child(studentID).setValue(student).addOnCompleteListener {
            if(it.isSuccessful)
            {
