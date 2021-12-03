@@ -31,6 +31,7 @@ fun getStudentList(){
             for (postSnapshot in snapshot.children) {
                 val student: Student? = postSnapshot.getValue(Student::class.java)
                 stdList?.add(student!!)
+
             }
             studentListRecyclerView.apply{
                 layoutManager=
