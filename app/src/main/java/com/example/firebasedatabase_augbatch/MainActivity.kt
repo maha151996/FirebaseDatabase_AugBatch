@@ -1,10 +1,13 @@
 package com.example.firebasedatabase_augbatch
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.widget.Toast
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     var databaseRefrence: DatabaseReference? =null
@@ -17,7 +20,10 @@ class MainActivity : AppCompatActivity() {
             //studentList()
         }
     }
+    fun saveimage(){
 
+
+    }
 
 
     private fun saveStudent() {

@@ -1,5 +1,4 @@
 package com.example.firebasedatabase_augbatch
-import com.google.gson.annotations.SerializedName
 data class Student(
         val ID:String="",
         val firstName:String="",

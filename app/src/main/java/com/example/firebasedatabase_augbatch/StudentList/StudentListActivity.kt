@@ -35,7 +35,7 @@ fun getStudentList(){
             }
             studentListRecyclerView.apply{
                 layoutManager=
-                        LinearLayoutManager(this@StudentListActivity, LinearLayoutManager.VERTICAL,false)
+                        LinearLayoutManager(this@StudentListActivity, LinearLayoutManager.HORIZONTAL,false)
                 adapter=studentadapter
             }
             studentadapter.studentList(stdList)
